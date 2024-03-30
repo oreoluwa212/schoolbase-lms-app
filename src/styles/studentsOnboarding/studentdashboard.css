@@ -1,0 +1,11 @@
+.sidebar {
+  width: 20%;
+  height: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 2rem;
+  box-shadow: 16px 4px 40px rgba(42, 39, 39, 0.1);
+}
