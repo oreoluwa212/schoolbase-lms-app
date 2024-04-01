@@ -4,9 +4,9 @@ import Header from './Header';
 
 const Settings = () => {
   return (
-    <div className="flex">
-        <Sidebar />
-      <div className="border w-[75%]">
+    <div className='flex'>
+      <Sidebar />
+      <div className='md:w-[75%] w-full'>
         <Header />
       </div>
     </div>

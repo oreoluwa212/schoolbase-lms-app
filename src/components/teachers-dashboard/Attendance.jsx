@@ -5,8 +5,8 @@ import Header from './Header';
 const Attendance = () => {
   return (
     <div className='flex'>
-        <Sidebar />
-      <div className='border w-[75%]'>
+      <Sidebar />
+      <div className='md:w-[75%] w-full'>
         <Header />
       </div>
     </div>

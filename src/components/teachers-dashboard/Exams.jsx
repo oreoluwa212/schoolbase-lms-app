@@ -19,7 +19,7 @@ const Exams = () => {
   return (
     <div className='flex w-full'>
       <Sidebar />
-      <div className='border-2 w-[75%]'>
+      <div className='border-2 md:w-[75%] w-full'>
         <Header />
 
         {quizModal ? (

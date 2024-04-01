@@ -8,7 +8,7 @@ const Sidebar = () => {
   const teacherBaseUrl = '/teacher/dashboard';
 
   return (
-    <div className='border w-[25%] flex flex-col items-center pt-10 pb-10 h-screen justify-between font-bold text-[#7D7676] text-sm'>
+    <div className='border w-[25%] md:flex flex-col items-center pt-10 pb-10 h-screen justify-between font-bold text-[#7D7676] text-sm hidden'>
       {/* SchoolBase Image */}
       <Link className='flex flex-col justify-center items-center' to='/'>
         <img src={schoolbaseLogo} alt='' width={50} />

@@ -5,8 +5,8 @@ import { Dashboard } from '../../../components/teachers-dashboard/Dashboard';
 const TeacherDashboard = () => {
   return (
     <div className='flex'>
-        <Sidebar />
-      <div className='border w-[75%]'>
+      <Sidebar />
+      <div className='md:w-[75%] w-full'>
         <Dashboard />
       </div>
     </div>

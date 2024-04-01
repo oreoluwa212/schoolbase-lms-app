@@ -14,7 +14,7 @@ const QuizHistory = () => {
   return (
     <div className='flex w-full'>
       <Sidebar />
-      <div className='border w-4/5'>
+      <div className='md:w-[75%] w-full'>
         <Header />
         {quizModal ? (
           <CreateQuizModal />

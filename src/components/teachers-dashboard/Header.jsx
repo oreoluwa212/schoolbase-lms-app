@@ -6,7 +6,7 @@ import DateSwitcher from './DateSwitcher';
 
 const Header = () => {
   return (
-    <div className='flex flex-col gap-2 xl:px-16 px-10 py-8 '>
+    <div className='flex flex-col gap-2 xl:px-16 px-10 py-8'>
       <div className='flex justify-between items-center gap-6 md:gap-20 xl:gap-0'>
         <div className='w-full xl:w-[30%]'>
           <SearchBar />
