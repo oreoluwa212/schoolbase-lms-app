@@ -11,12 +11,12 @@ const Profile = () => {
         width={40}
         className='rounded-full cursor-pointer'
       />
-      <div>
+      <div className='hidden xl:flex flex-col'>
         <p className='text-[#1d1d1d] font-bold'>Doose Atumeyi</p>
         <p className='text-xs text-[#3d5ee1] font-bold'>Teacher</p>
       </div>
       <div className='mt-3 cursor-pointer text-[#7e84a3]'>
-        <RiArrowDownSLine />
+        <RiArrowDownSLine className='hidden xl:block' />
       </div>
     </div>
   );

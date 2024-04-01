@@ -6,19 +6,19 @@ import DateSwitcher from './DateSwitcher';
 
 const Header = () => {
   return (
-    <div className='flex flex-col gap-2 px-16 py-8'>
-      <div className='flex justify-between items-center'>
-        <div className='w-[30%]'>
+    <div className='flex flex-col gap-2 xl:px-16 px-10 py-8 '>
+      <div className='flex justify-between items-center gap-6 md:gap-20 xl:gap-0'>
+        <div className='w-full xl:w-[30%]'>
           <SearchBar />
         </div>
-        <div className='flex gap-40 items-center '>
-          <div className='p-3 bg-[#b11e1a]/10 rounded-full '>
-            <CiBellOn size={24} className='' />
+        <div className='flex gap-40 items-center'>
+          <div className='p-3 bg-[#b11e1a]/10 rounded-full hidden xl:flex'>
+            <CiBellOn size={24} />
           </div>
           <Profile />
         </div>
       </div>
-      <div className='flex justify-end'>
+      <div className='justify-end hidden xl:flex'>
         <DateSwitcher />
       </div>
     </div>

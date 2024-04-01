@@ -2,15 +2,15 @@ import React from 'react';
 
 const CreateQuizModal = () => {
   return (
-    <div className='px-24 py-24 grid grid-cols-2 gap-12 items-center'>
-      <div className='flex flex-col justify-between h-[450px]'>
-        <div className='flex flex-col gap-10'>
+    <div className='xl:px-16 px-12 xl:py-16 py-12 grid xl:grid-cols-2 grid-cols-1 gap-12 items-center'>
+      <div className='flex flex-col justify-between xl:h-[450px] xl:grid-col-auto grid-col-1'>
+        <div className='flex flex-col gap-10 '>
           <div className='flex flex-col gap-1'>
             <p className='font-bold text-xs'>Class</p>
             <select
               name=''
               id=''
-              className='outline-none w-[50%] bg-white border border-gray-300 py-1 px-3 rounded-md text-gray-600'
+              className='outline-none xl:w-[50%] w-full bg-white border border-gray-300 py-1 px-3 rounded-md text-gray-600'
             >
               <option value='' disabled selected>
                 Select a Class
@@ -25,7 +25,7 @@ const CreateQuizModal = () => {
             <select
               name=''
               id=''
-              className='outline-none w-[50%] bg-white border border-gray-300 py-1 px-3 rounded-md text-gray-600'
+              className='outline-none xl:w-[50%] w-full bg-white border border-gray-300 py-1 px-3 rounded-md text-gray-600'
             >
               <option value='' disabled selected>
                 Select a Class
@@ -36,11 +36,11 @@ const CreateQuizModal = () => {
             </select>
           </div>
         </div>
-        <button className='bg-[#3D5EE1] text-white font-bold rounded-xl py-2'>
-          Create Quiz
-        </button>
       </div>
-      <div className='border h-[450px]'>Calendar</div>
+      <div className='border h-[450px] xl:grid-col-auto'>Calendar</div>
+      <button className='bg-[#3D5EE1] text-white font-bold rounded-xl py-2 xl:-mt-32'>
+        Create Quiz
+      </button>
     </div>
   );
 };
