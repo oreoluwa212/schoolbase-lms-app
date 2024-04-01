@@ -18,7 +18,7 @@ const Header = () => {
           <Profile />
         </div>
       </div>
-      <div className='justify-end hidden xl:flex'>
+      <div className='justify-end flex mt-3 xl:mt-0'>
         <DateSwitcher />
       </div>
     </div>

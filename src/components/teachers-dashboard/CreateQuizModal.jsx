@@ -1,4 +1,5 @@
 import React from 'react';
+import CalendarComponent from './CalendarComponent';
 
 const CreateQuizModal = () => {
   return (
@@ -11,8 +12,9 @@ const CreateQuizModal = () => {
               name=''
               id=''
               className='outline-none xl:w-[50%] w-full bg-white border border-gray-300 py-1 px-3 rounded-md text-gray-600'
+              defaultValue='DEFAULT'
             >
-              <option value='' disabled selected>
+              <option value='DEFAULT' disabled>
                 Select a Class
               </option>
               <option value='1'>Select a Class</option>
@@ -26,8 +28,9 @@ const CreateQuizModal = () => {
               name=''
               id=''
               className='outline-none xl:w-[50%] w-full bg-white border border-gray-300 py-1 px-3 rounded-md text-gray-600'
+              defaultValue='DEFAULT'
             >
-              <option value='' disabled selected>
+              <option value='DEFAULT' disabled>
                 Select a Class
               </option>
               <option value='1'>Select a Class</option>
@@ -37,7 +40,9 @@ const CreateQuizModal = () => {
           </div>
         </div>
       </div>
-      <div className='border h-[450px] xl:grid-col-auto'>Calendar</div>
+
+      <CalendarComponent />
+
       <button className='bg-[#3D5EE1] text-white font-bold rounded-xl py-2 xl:-mt-32'>
         Create Quiz
       </button>
