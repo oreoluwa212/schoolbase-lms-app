@@ -13,7 +13,7 @@ const QuizHistory = () => {
 
   return (
     <div className='flex w-full'>
-        <Sidebar />
+      <Sidebar />
       <div className='border w-4/5'>
         <Header />
         {quizModal ? (
@@ -22,7 +22,7 @@ const QuizHistory = () => {
           </div>
         ) : (
           <div className='px-16 py-8'>
-            <p className='font-bold text-2xl mb-4'>No Records Available</p>
+            <p className='font-bold text-2xl mb-4'>No Record Available</p>
             <p className='text-3xl'>Set your Quizzes here</p>
           </div>
         )}
