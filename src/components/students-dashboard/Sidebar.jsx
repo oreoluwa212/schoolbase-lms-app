@@ -21,17 +21,12 @@ const Sidebar = ({ isOpen }) => {
     else if (location.pathname === "/student/student-life") setActiveButton(2);
     else if (
       location.pathname === "/student/classes"
-      // location.pathname === "/tutors/tutor/overview" ||
-      // location.pathname === "/tutors/tutor/book-a-session"
     )
       setActiveButton(3);
     else if (location.pathname === "/student/payments") setActiveButton(4);
     else if (location.pathname === "/student/mail") setActiveButton(5);
     else if (location.pathname === "/student/settings") setActiveButton(6);
   }, [location.pathname]);
-    const handleLogout = () => {
-      localStorage.clear();
-    };
   return (
     <>
       <div className="border w-[20%] hidden lgss:flex flex-col items-center pt-12 pb-10 h-screen justify-between font-bold text-[#7D7676] text-sm sidebar">
@@ -137,7 +132,7 @@ const Sidebar = ({ isOpen }) => {
                 SCHOOL <span className="text-primary">BASE</span>
               </h1>
             </div>
-            <div className="mt-12 w-full flex flex-col gap-2 justify-start items-start font-manrope">
+            <div className="mt-16 w-full flex flex-col gap-2 justify-start items-start font-manrope">
               <Link
                 to="/student/dashboard"
                 className={

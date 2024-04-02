@@ -5,7 +5,6 @@ import WelcomePage from './WelcomePage'
 const Holder = () => {
   return (
     <>
-      {/* <LandingPage /> */}
       <WelcomePage />
     </>
   )

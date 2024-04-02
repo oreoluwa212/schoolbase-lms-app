@@ -3,7 +3,7 @@ import { aboutOne, aboutThree, aboutTwo, BlkLine, Mission, Vision } from "../../
 
 const About = () => {
   return (
-    <div>
+    <div className="w-[100%] px-[5%] overflow-x-hidden">
       <div className="flex mt-40 flex-col mb-10 items-center justify-center w-full">
         <div className="flex justify-center items-center">
           <img src={BlkLine} alt="black line" />
@@ -12,9 +12,9 @@ const About = () => {
         </div>
         <p className="font-semibold text-3xl">Why we are the best</p>
       </div>
-      <div className="flex w-full px-[5%] justify-center items-center">
+      <div className="flex lgss:flex-row flex-col w-full px-[5%] justify-center items-center">
        
-         <div className="w-2/5">
+         <div className="lgss:w-2/5">
          <img
             src={aboutOne}
             alt="A group of people working together in a team"
@@ -29,7 +29,7 @@ const About = () => {
           <button className="p-4 bg-primary rounded-xl text-white">Explore our space</button>
          
         </div>
-        <div className="w-3/5 ml-4">
+        <div className="lgss:w-3/5 px-[2%]">
           <div className="flex mb-12">
             <img src={aboutTwo} alt="Team work" className="w-3/5 mx-4"/>
             <div className="w-full">
