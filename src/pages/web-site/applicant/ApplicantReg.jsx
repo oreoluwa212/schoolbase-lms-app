@@ -238,7 +238,7 @@ const ApplicantReg = () => {
             <p>upload recent passport photograph</p>
             <input type="file" />
           </div>
-          <Link to="/get-started/applicantcontact">
+          <Link to="/get-started/applicant/contact">
             <div className="flex flex-row-reverse">
               <button className="border hover:bg-white hover:text-[#3D5EE1] bg-[#3D5EE1] text-white rounded-md h-10 w-36 cursor-pointer my-2 lgss:">
                 Continue

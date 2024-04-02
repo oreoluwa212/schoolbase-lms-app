@@ -154,14 +154,14 @@ const ApplicantContact = () => {
             />
           </div>
           <div className="flex mt-7 justify-between">
-            <Link to="/get-started/applicantregistration">
+            <Link to="/get-started/applicant/registration">
               <div className="">
                 <button className="border hover:bg-[#3D5EE1] hover:text-white bg-[white] text-[#3D5EE1] rounded-md h-10 w-36 cursor-pointer my-2">
                   Back
                 </button>
               </div>
             </Link>
-            <Link to="/get-started/applicantacademiainfo">
+            <Link to="/get-started/applicant/academiainfo">
               <div className="">
                 <button className="border hover:bg-white hover:text-[#3D5EE1] bg-[#3D5EE1] text-white rounded-md h-10 w-36 cursor-pointer my-2">
                   Continue

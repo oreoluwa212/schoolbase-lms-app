@@ -13,6 +13,7 @@ import QuizHistory from './components/teachers-dashboard/QuizHistory';
 import ApplicantReg from './pages/web-site/applicant/ApplicantReg';
 import ApplicantContact from './pages/web-site/applicant/ApplicantContact'; 
 import ApplicantAcademiaInfo from './pages/web-site/applicant/ApplicantAcademiaInfo';
+import EmailVerification from './pages/web-site/applicant/EmailVerification';
 import SignInPage from './pages/web-site/teachersOnboading/SignInPage';
 import SignUpPage from './pages/web-site/teachersOnboading/SignUpPage';
 import HomePage from './pages/web-app/students-dashboard/HomePage';
@@ -51,9 +52,10 @@ function App() {
           path='/teacher/dashboard/exams/history'
           element={<QuizHistory />}
         />
-        <Route path="/get-started/applicantregistration" element={<ApplicantReg />} />
-        <Route path="/get-started/applicantcontact" element={<ApplicantContact />} />
-        <Route path="/get-started/applicantacademiainfo" element={<ApplicantAcademiaInfo />} />
+        <Route path="/get-started/applicant/registration" element={<ApplicantReg />} />
+        <Route path="/get-started/applicant/contact" element={<ApplicantContact />} />
+        <Route path="/get-started/applicant/academiainfo" element={<ApplicantAcademiaInfo />} />
+        <Route path="/get-started/applicant/emailverification" element={<EmailVerification />} />
       </Routes>
     </Router>
   );
