@@ -26,14 +26,14 @@ const QuizHistory = () => {
         )}
 
         <div
-          className={`bottom-20 absolute right-8 font-bold bg-[#3d5ee1] xl:p-6 p-2 xl:rounded-[3.5rem] rounded-3xl cursor-pointer ${
+          className={`bottom-10 absolute right-10 font-bold bg-[#3d5ee1] xl:p-5 p-2 xl:rounded-[3.5rem] rounded-3xl cursor-pointer ${
             quizModal ? 'hidden' : 'absolute'
           }`}
         >
           <CiSquarePlus
             color='#ffffff'
             onClick={openQuizModal}
-            className='xl:w-[100px] xl:h-[100px] w-[60px] h-[60px]'
+            className='xl:w-[60px] xl:h-[60px] w-[40px] h-[40px]'
           />
         </div>
       </div>
