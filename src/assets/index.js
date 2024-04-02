@@ -30,6 +30,13 @@ import SlideImgThree from '../assets/images/slideImgThree.svg'
 import SlideImgFour from '../assets/images/slideImgFour.svg'
 import Star from '../assets/images/star.svg'
 import unionImg from '../assets/images/Union.svg'
+import chemistry from '../assets/images/chemistry.png'
+import biology from '../assets/images/biology.png'
+import arts from '../assets/images/arts.png'
+import geography from "../assets/images/geography.png";
+import maths from "../assets/images/mathematics.png";
+import physics from "../assets/images/physics.png";
+import teachImg from "../assets/images/teachImg.png";
 
 export {
   schoolbaseLogo,
@@ -63,5 +70,12 @@ export {
   Ellipse,
   cycle,
   Call,
-  unionImg
+  unionImg,
+  biology,
+  physics,
+  maths,
+  arts,
+  chemistry,
+  geography,
+  teachImg,
 };

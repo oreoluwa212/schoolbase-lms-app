@@ -9,7 +9,7 @@ const SearchBar = () => {
       </div>
       <input
         type='text'
-        className='bg-[#b11e1a]/10 outline-none pl-3 rounded-r-full w-full text-xs py-2'
+        className='bg-[#b11e1a]/10 outline-none px-3 rounded-r-full w-full text-xs py-2'
         placeholder='Courses, Students, Database...'
       />
     </div>
