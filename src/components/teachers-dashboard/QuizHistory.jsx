@@ -13,26 +13,28 @@ const QuizHistory = () => {
 
   return (
     <div className='flex w-full'>
-        <Sidebar />
-      <div className='border w-4/5'>
+      <Sidebar />
+      <div className='md:w-[75%] w-full'>
         <Header />
         {quizModal ? (
-          <div className='border border-black rounded-[2rem] my-8 mx-16'>
-            <CreateQuizModal />
-          </div>
+          <CreateQuizModal />
         ) : (
           <div className='px-16 py-8'>
-            <p className='font-bold text-2xl mb-4'>No Records Available</p>
+            <p className='font-bold text-2xl mb-4'>No Record Available</p>
             <p className='text-3xl'>Set your Quizzes here</p>
           </div>
         )}
 
         <div
-          className={`bottom-20 absolute right-8 font-bold bg-[#3d5ee1] p-6 rounded-[3.5rem] cursor-pointer ${
+          className={`bottom-10 absolute right-10 font-bold bg-[#3d5ee1] xl:p-5 p-2 xl:rounded-[3.5rem] rounded-3xl cursor-pointer ${
             quizModal ? 'hidden' : 'absolute'
           }`}
         >
-          <CiSquarePlus size={100} color='#ffffff' onClick={openQuizModal} />
+          <CiSquarePlus
+            color='#ffffff'
+            onClick={openQuizModal}
+            className='xl:w-[60px] xl:h-[60px] w-[40px] h-[40px]'
+          />
         </div>
       </div>
     </div>
