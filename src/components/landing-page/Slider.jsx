@@ -93,7 +93,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="flex items-center justify-between w-full mt-10 border-2 border-red-600">
+    <div className="hidden lgss:flex items-center justify-between w-full mt-10 border-2 border-red-600">
       
       <button onClick={goToPrevSlide} className="w-1/6 border-2 border-red-600">Previous</button>
     <div className="w-4/5 border-2 border-red-600" >
