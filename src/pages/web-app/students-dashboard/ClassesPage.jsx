@@ -10,15 +10,33 @@ import {
   physics,
   teachImg,
 } from "../../../assets";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const ClassesPage = () => {
+  const [ isOpen, setIsOpen ] = useState(false);
+
   return (
     <div className="flex flex-row h-screen">
-      <Sidebar />
-      <div className="w-4/5 flex flex-col h-full overflow-auto bg-white font-lexend justify-start pb-6">
-        <h1 className="text-[28px] px-[40px] pt-[20px] font-semibold text-secondary">
-          My Courses
-        </h1>
+      <Sidebar isOpen={isOpen} />
+      <div className="lgss:w-4/5 flex flex-col h-full overflow-auto bg-white  justify-start pb-6">
+        <div className="flex justify-between w-[90%] pt-[20px]">
+          <h1 className="text-[28px] px-[40px] font-semibold text-secondary">
+            My Courses
+          </h1>
+          <div className="lgss:hidden">
+            {isOpen ? (
+              <FaTimes
+                onClick={() => setIsOpen(false)}
+                className=" cursor-pointer text-red text-xl"
+              />
+            ) : (
+              <FaBars
+                onClick={() => setIsOpen(true)}
+                className=" cursor-pointer text-red text-xl"
+              />
+            )}
+          </div>
+        </div>
         <div className="flex flex-wrap justify-start items-center px-8 gap-3 w-[95%] text-[22px] text-[#8F8F8F] font-medium  pt-10 ">
           <CourseCard
             title="Physics"
