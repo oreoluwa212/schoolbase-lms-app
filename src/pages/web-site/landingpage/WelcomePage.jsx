@@ -22,22 +22,22 @@ const WelcomePage = () => {
     <div className="">
       <div className="overflow-hidden">
         {/* Nav Area */}
-        <div className="lgss:flex lgss:flex-row hidden justify-between items-center px-[80px] relative top-20 -mt-20">
-          <div className="flex justify-center items-center mt-4">
+        <div className="lgss:flex lgss:flex-row hidden justify-between items-center px-[80px] relative top-20 -mt-20 ">
+          <div className="flex justify-center items-center">
             <img src={schoolbaseLogo} alt="" />
             <p className="font-manrope sans px-2 font-extrabold text-[28px]">
               SCHOOL<span className=" text-[#3D5EE1]">BASE</span>
             </p>
           </div>
           {/* ++++++++ */}
-          <ul className="lgss:flex gap-5 justify-center font-normal text-[20px]">
+          <ul className="lgss:flex gap-5 justify-between w-[45%] font-semibold text-[20px]">
             <li className="text-[#3D5EE1]">Home</li>
             <li>Why us</li>
             <li>About us</li>
             <li>Testimonials</li>
             <li>Contact us</li>
           </ul>
-          <div className="flex justify-center items-center gap-10">
+          <div className="flex justify-between items-center gap-10 w-[20%]">
             <div className="bg-white h-14 w-14 rounded-full p-3 flex justify-center items-center">
               <img src={Call} alt="" className="relative w-8 h-8" />
             </div>
@@ -98,9 +98,9 @@ const WelcomePage = () => {
         )}
 
         {/* Hero Section  */}
-        <div className="flex justify-center items-center h-full ">
-          <div className="flex flex-col lgss:flex-row union mx-auto w-[90%] pt-20">
-            <div className="lgss:w-[50%] flex flex-col gap-8 px-6 w-[90%]">
+        <div className="flex justify-center items-center h-full">
+          <div className="flex flex-col lgss:flex-row union mx-auto bg-no-repeat bg-cover pt-20">
+            <div className="lgss:w-[50%] flex flex-col gap-8 px-[5%] pt-12 w-[90%]">
               <p className="font-bold text-[56px] pt-8 leading-[3.2rem]">
                 Welcome to SchoolBase
               </p>
