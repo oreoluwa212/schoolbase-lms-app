@@ -3,7 +3,7 @@ import { studentImg } from "../../assets";
 
 const StudentProfile = () => {
    return (
-     <div className="w-full bg-blue1 py-2 px-6">
+     <div className="w-full bg-blue1 py-2 px-6 shadow-lg">
        <div className="border-b-2 h-[60px] w-full flex justify-between items-center py-2 pr-6">
          <div className="flex gap-4">
            <div className="flex flex-col gap-1 font-semibold">

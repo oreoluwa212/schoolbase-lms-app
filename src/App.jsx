@@ -23,6 +23,7 @@ import MailPage from './pages/web-app/students-dashboard/MailPage';
 import SettingsPage from './pages/web-app/students-dashboard/Settings';
 import LandingPage from './pages/web-site/landingpage/LandingPage';
 import AssessmentPage from './pages/web-app/students-dashboard/AssessmentPage';
+import PayFees from './pages/web-app/students-dashboard/PayFees';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path='/student/student-life' element={<StudentsPage />} />
         <Route path='/student/classes' element={<ClassesPage />} />
         <Route path='/student/payments' element={<PaymentsPage />} />
+        <Route path='/student/payments/pay' element={<PayFees />} />
         <Route path='/student/mail' element={<MailPage />} />
         <Route path='/student/assessment' element={<AssessmentPage />} />
         <Route path='/student/settings' element={<SettingsPage />} />
