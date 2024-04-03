@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Sidebar from "../../../components/students-dashboard/Sidebar";
-import { FaBars, FaBell, FaTimes } from "react-icons/fa";
+import { FaAngleDown, FaBars, FaBell, FaRegClock, FaTimes, FaUsers } from "react-icons/fa";
 import { studentImg } from "../../../assets";
 import StudentProfile from "../../../components/students-dashboard/StudentProfile";
+import { FiMessageSquare } from "react-icons/fi";
+import { GoTriangleDown } from "react-icons/go";
 import { Link } from "react-router-dom";
 
 const mockData = [
@@ -120,7 +122,7 @@ const StudentsPage = () => {
           </div>
           <div className="flex flex-col justify-start gap-6 w-[85%] text-neutral pt-10 pb-5">
             <StudentProfile />
-            <div className="flex pt-6 gap-6">
+            <div className="flex flex-col lgss:flex-row pt-6 gap-6">
               <button
                 onClick={() => setActiveScreen(1)}
                 className={
@@ -189,51 +191,76 @@ const StudentsPage = () => {
                 </div>
               </div>
             ) : activeScreen === 2 ? (
-              <div className="bg-white rounded-lg shadow-2xl shadow-secondary/30 overflow-auto w-full p-3 py-3 flex flex-col justify-between">
-                <div className="">
-                  <table className="w-full text-center">
-                    <thead>
-                      <tr className="border-b-[1px] border-gray-300  bg-pink h-12">
-                        <th className="">Transaction Date</th>
-                        <th className="">Reference Number</th>
-                        <th className="">Fee Type</th>
-                        <th>Amount</th>
-                        <th>Outstanding</th>
-                        <th>Receipt</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {paymentData.map((rowData, index) => (
-                        <tr
-                          className="border-b-[1px] border-x-[1px] border-gray-300 font-semibold h-12"
-                          key={index}
-                        >
-                          <td className="py-2 border-r-[2px]">
-                            {rowData["Transaction Date"]}
-                          </td>
-                          <td className="py-2 border-r-[2px]">
-                            {rowData["Reference"]}
-                          </td>
-                          <td className="py-2 border-r-[2px]">
-                            {rowData["Fee Type"]}
-                          </td>
-                          <td className="py-2 border-r-[2px]">
-                            {rowData["Amount"]}
-                          </td>
-                          <td className="py-2 border-r-[2px]">
-                            {rowData["Outstanding"]}
-                          </td>
-                          <td>
-                            <button className="bg-primary text-white px-2 text-[12px] py-[5px] rounded-full shadow-lg">
-                              Print Receipt
-                            </button>
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+              <>
+                <div className="flex flex-col lgss:flex-row pt-6 gap-6">
+                  <button
+                    className="border-secondary border-[1px] text-secondary px-4 flex justify-center items-center gap-3 font-semibold h-10 rounded-[32px]"
+                  >
+                    <FaRegClock />
+                    Date
+                    <GoTriangleDown />
+                  </button>
+                  <button
+                    className="border-secondary border-[1px] text-secondary px-4 flex justify-center items-center gap-3 font-semibold h-10 rounded-[32px]"
+                  >
+                    <FiMessageSquare />
+                    Payment Type
+                    <GoTriangleDown />
+                  </button>
+                  <button
+                    className="border-secondary border-[1px] text-secondary px-4 flex justify-center items-center gap-3 font-semibold h-10 rounded-[32px]"
+                  >
+                    <FaUsers/>
+                    Sent
+                    <GoTriangleDown />
+                  </button>
                 </div>
-              </div>
+                <div className="bg-white rounded-lg shadow-2xl shadow-secondary/30 overflow-auto w-full p-3 py-3 flex flex-col justify-between">
+                  <div className="">
+                    <table className="w-full text-center">
+                      <thead>
+                        <tr className="border-b-[1px] border-gray-300 text-[12px] lgss:text-[16px]  bg-pink h-12">
+                          <th className="">Transaction Date</th>
+                          <th className="">Reference Number</th>
+                          <th className="">Fee Type</th>
+                          <th>Amount</th>
+                          <th>Outstanding</th>
+                          <th>Receipt</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {paymentData.map((rowData, index) => (
+                          <tr
+                            className="border-b-[1px] border-x-[1px] border-gray-300 font-semibold h-12 text-[12px] lgss:text-[16px] "
+                            key={index}
+                          >
+                            <td className="py-2 px-1 lgss:px-0 border-r-[2px]">
+                              {rowData["Transaction Date"]}
+                            </td>
+                            <td className="py-1 border-r-[2px]">
+                              {rowData["Reference"]}
+                            </td>
+                            <td className="py-2 px-2 border-r-[2px]">
+                              {rowData["Fee Type"]}
+                            </td>
+                            <td className="py-2 border-r-[2px]">
+                              {rowData["Amount"]}
+                            </td>
+                            <td className="py-2 border-r-[2px]">
+                              {rowData["Outstanding"]}
+                            </td>
+                            <td className="px-2 lgss:px-0">
+                              <button className="bg-primary text-white px-2  lgss:py-[5px] rounded-full shadow-lg text-[10px] lgss:text-[12px] ">
+                                Print Receipt
+                              </button>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </>
             ) : activeScreen === 3 ? (
               <div className="bg-white rounded-lg shadow-2xl shadow-secondary/30 border-[1px] overflow-auto w-full p-3 py-3 flex flex-col justify-between mt-6">
                 <div className="">
