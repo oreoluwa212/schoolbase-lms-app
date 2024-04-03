@@ -23,11 +23,11 @@ const Profile = () => {
       </div>
 
       {/* Mobile */}
-      <div className='gap-2 flex md:hidden'>
+      {/* <div className='gap-2 flex md:hidden'>
         <div className='cursor-pointer text-[#7e84a3]'>
           <RiMenu5Fill size={20} />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

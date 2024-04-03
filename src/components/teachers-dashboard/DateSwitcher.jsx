@@ -27,7 +27,7 @@ const DateSwitcher = () => {
   const month = Object.keys(months)[monthIndex];
 
   return (
-    <div className='w-full xl:w-[29%] flex justify-between justify-center items-center text-lg text-black'>
+    <div className='w-full xl:w-[29%] flex justify-between items-center text-lg text-black'>
       <MdKeyboardArrowLeft
         size={20}
         className='cursor-pointer text-black/60'
