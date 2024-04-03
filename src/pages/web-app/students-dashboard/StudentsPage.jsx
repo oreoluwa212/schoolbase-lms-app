@@ -15,7 +15,7 @@ const PaymentsPage = () => {
         <div className="flex flex-col justify-between items-center text-primary w-full pt-[20px] px-[5%]">
           <div className="w-full flex justify-between">
             <h1 className="text-[28px] font-semibold text-secondary">
-              Payments
+              Student Life
             </h1>
             <div className="lgss:hidden">
               {isOpen ? (

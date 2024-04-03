@@ -25,6 +25,7 @@ const Sidebar = ({ isOpen }) => {
       setActiveButton(3);
     else if (
       location.pathname === "/student/payments" ||
+      location.pathname === "/student/payments/pay" ||
       location.pathname === "/student/assessment" 
     
     ) setActiveButton(4);
