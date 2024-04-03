@@ -5,8 +5,9 @@ import { studentImg } from "../../../assets";
 import StudentProfile from "../../../components/students-dashboard/StudentProfile";
 import { Link } from "react-router-dom";
 
-const PaymentsPage = () => {
-    const [isOpen, setIsOpen] = useState(false);
+
+const StudentsPage = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="flex flex-row h-screen">
@@ -33,37 +34,10 @@ const PaymentsPage = () => {
           </div>
           <div className="flex flex-col justify-start gap-6 w-[85%] text-neutral pt-10 pb-5">
             <StudentProfile />
-            <div className="flex flex-col gap-3 pt-2">
-              <h1 className="text-[24px] font-medium">My Studies</h1>
-              <div className="flex justify-between w-full pt-4">
-                <Link
-                  className="w-[47%] h-[142px] bg-white rounded-[16px] shadow-md shadow-secondary/50 flex justify-center items-center"
-                  to={"/student/classes"}
-                >
-                  <div>
-                    <p className="text-[20px] font-medium">My Subjects</p>
-                  </div>
-                </Link>
-                <Link
-                  className="w-[47%] h-[142px] bg-white rounded-[16px] shadow-md shadow-secondary/50 flex justify-center items-center font-medium"
-                  to={"/student/assessment"}
-                >
-                  <div>
-                    <p className="text-[20px]">Assessments and Results</p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className="flex flex-col gap-3 pt-2">
-              <h1 className="text-[24px] font-medium">My Finances</h1>
-              <div className="flex justify-between w-full pt-4">
-                <div className="w-[47%] h-[142px] bg-pink rounded-[16px] shadow-md shadow-secondary/50 flex justify-center items-center">
-                  <p className="text-[20px] font-medium">View Payment</p>
-                </div>
-                <div className="w-[47%] h-[142px] bg-pink rounded-[16px] shadow-md shadow-secondary/50 flex justify-center items-center font-medium">
-                  <p className="text-[20px]">Make Payment</p>
-                </div>
-              </div>
+            <div className="flex gap-3">
+              <button className="bg-primary text-white px-4 font-semibold py-2 rounded-full">Payment Outstanding</button>
+              <button className="border-primary border-[1px] text-primary px-4 font-semibold py-2 rounded-full">All Payments</button>
+              <button className="border-primary border-[1px] text-primary px-4 font-semibold py-2 rounded-full">Pay Now</button>
             </div>
           </div>
         </div>
@@ -72,4 +46,4 @@ const PaymentsPage = () => {
   );
 };
 
-export default PaymentsPage;
+export default StudentsPage;
