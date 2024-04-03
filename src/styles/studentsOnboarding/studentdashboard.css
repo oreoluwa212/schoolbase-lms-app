@@ -1,7 +1,9 @@
 .sidebar {
   width: 20%;
-  height: 100vw;
-  overflow: hidden;
+  height: 100vh;
+  /* Set height to 100% of viewport height */
+  overflow-y: auto;
+  /* Enable vertical scrolling if content exceeds height */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

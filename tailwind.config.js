@@ -9,8 +9,10 @@ module.exports = {
         neutral: "#1E1E1E",
         secondary: "#4D4D4E",
         blueBg: "#F9FCFF",
+        blue1: "#F9FAFF",
+        pink: "#FFF3F3",
       },
-      
+
       fontFamily: {
         manrope: ["Manrope", "sans-serif"],
         itim: ["Itim", "cursive"],
