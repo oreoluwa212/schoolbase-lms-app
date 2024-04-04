@@ -11,6 +11,7 @@ module.exports = {
         blueBg: "#F9FCFF",
         blue1: "#F9FAFF",
         pink: "#FFF3F3",
+        signUpBg: "#DEE3F9",
       },
 
       fontFamily: {

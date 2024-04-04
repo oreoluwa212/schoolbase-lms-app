@@ -11,7 +11,6 @@ const TeacherDashboard = () => {
     <div className="flex flex-row h-screen">
       <Sidebar isOpen={isOpen} />
       <div className="lgss:w-4/5 w-full lgss:overflow-auto">
-        <Header />
         <div className="lgss:hidden flex justify-end w-full">
           <Header />
           <div className="lgss:hidden pt-5 px-[5%]">
