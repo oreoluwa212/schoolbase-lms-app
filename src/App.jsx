@@ -22,6 +22,7 @@ import PaymentsPage from './pages/web-app/students-dashboard/PaymentsPage';
 import MailPage from './pages/web-app/students-dashboard/MailPage';
 import SettingsPage from './pages/web-app/students-dashboard/Settings';
 import LandingPage from './pages/web-site/landingpage/LandingPage';
+import Timetable from './Calender';
 import AssessmentPage from './pages/web-app/students-dashboard/AssessmentPage';
 import PayFees from './pages/web-app/students-dashboard/PayFees';
 import StuSignUp from './pages/web-site/studentsOnboarding/StuSignUp';
@@ -56,6 +57,7 @@ function App() {
           path="/teacher/dashboard/exams/history"
           element={<QuizHistory />}
         />
+        <Route path='/calender' element={<Timetable />} />
         <Route
           path="/get-started/applicantregistration"
           element={<ApplicantReg />}

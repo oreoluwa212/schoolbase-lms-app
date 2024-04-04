@@ -43,7 +43,7 @@ const SignInPage = () => {
               </div>
               <div className="flex flex-col">
                 <label
-                  htmlFor="residential address"
+                  htmlFor="Password"
                   className="text-[18px] font-semibold"
                 >
                   Password
