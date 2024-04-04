@@ -12,7 +12,7 @@ const SignUpPage = () => {
   }
   return (
     <div className="flex bg-gray-100">
-      <div className="bg-signUpBg hidden lgss:flex lgss:w-1/2 flex-col justify-start items-start h-screen">
+      <div className="bg-signUpBg h-screen hidden lgss:flex lgss:w-1/2 flex-col justify-start items-start">
         <Link to={"/"} className="px-10 pt-4">
           <h1 className="text-4xl font-semibold text-primary font-itim">
             SchoolBase
@@ -159,36 +159,6 @@ const SignUpPage = () => {
             </div>
             <div className="flex flex-col w-1/2">
               <label
-                htmlFor="Password"
-                className="text-[18px] font-semibold"
-              >
-                Confirm Password
-              </label>
-              <div className="  bg-white flex outline-none text-[16px] w-full justify-between items-center py-2 shadow-lg shadow-gray-400/70 px-2">
-                <input
-                  type={isPasswordVisible ? "text" : "password"}
-                  placeholder="Confirm Password"
-                  className="outline-none w-full"
-                  onChange={(e) => {
-                    setPassword(e.target.value);
-                  }}
-                />
-
-                {isPasswordVisible ? (
-                  <IoMdEye
-                    onClick={togglePasswordVisibility}
-                    className="cursor-pointer text-xl relative"
-                  />
-                ) : (
-                  <IoMdEyeOff
-                    onClick={togglePasswordVisibility}
-                    className="cursor-pointer text-xl relative "
-                  />
-                )}
-              </div>
-            </div>
-            <div className="flex flex-col w-1/2">
-              <label
                 htmlFor="residential address"
                 className="text-[18px] font-semibold"
               >
@@ -216,15 +186,6 @@ const SignUpPage = () => {
                   />
                 )}
               </div>
-            </div>
-          </div>
-        </div>
-        <Link className="w-[90%]" to={"/teacher/dashboard"}>
-          <button className="bg-primary w-full py-3 mt-8 text-white font-semibold text-[18px] rounded-[16px]">
-            Sign Up
-          </button>
-        </Link>
-        <p className="text-center w-full font-semibold mt-3">
             </div>
           </div>
         </div>

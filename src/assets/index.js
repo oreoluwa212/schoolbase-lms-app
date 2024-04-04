@@ -102,6 +102,6 @@ export {
   chemistry,
   geography,
   teachImg,
-  studentImg
+  studentImg,
   loginImg
 };
