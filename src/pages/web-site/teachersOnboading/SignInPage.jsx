@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { signupImg } from "../../../assets";
+import { loginImg } from "../../../assets";
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
 
 const SignInPage = () => {
@@ -17,7 +17,7 @@ const SignInPage = () => {
           </h1>
         </Link>
         <div className=" flex justify-center items-center h-full px-8">
-          <img src={signupImg} alt="SignUp" className="w-3/4" />
+          <img src={loginImg} alt="SignUp" className="w-3/4" />
         </div>
       </div>
       <form className="w-full lgss:w-1/2 flex flex-col justify-center items-start px-8">
