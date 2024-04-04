@@ -49,6 +49,7 @@ import maths from "../assets/images/mathematics.png";
 import physics from "../assets/images/physics.png";
 import teachImg from "../assets/images/teachImg.png";
 import studentImg from '../assets/images/avatar-4.png'
+import loginImg from '../assets/images/loginImg.png'
 
 export {
   schoolbaseLogo,
@@ -102,4 +103,5 @@ export {
   geography,
   teachImg,
   studentImg
+  loginImg
 };

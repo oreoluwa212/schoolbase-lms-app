@@ -57,9 +57,6 @@ function App() {
           path="/teacher/dashboard/exams/history"
           element={<QuizHistory />}
         />
-        <Route path="/get-started/applicantregistration" element={<ApplicantReg />} />
-        <Route path="/get-started/applicantcontact" element={<ApplicantContact />} />
-        <Route path="/get-started/applicantacademiainfo" element={<ApplicantAcademiaInfo />} />
         <Route path='/calender' element={<Timetable />} />
         <Route
           path="/get-started/applicantregistration"

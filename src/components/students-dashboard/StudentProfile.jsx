@@ -1,5 +1,5 @@
 import { FaBell } from "react-icons/fa";
-import { studentImg } from "../../assets/index";
+import { studentImg } from "../../assets";
 
 const StudentProfile = () => {
    return (
@@ -11,7 +11,7 @@ const StudentProfile = () => {
              <h2>Ada Smith</h2>
            </div>
            <div className="">
-             <img src={studentImg} alt="" />0
+             <img src={studentImg} alt="" />
            </div>
          </div>
          <div className="text-[20px] text-secondary text-opacity-60">

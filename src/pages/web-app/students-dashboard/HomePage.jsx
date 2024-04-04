@@ -15,6 +15,7 @@ import {
   search,
   userpix,
 } from "../../../assets";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -108,6 +109,24 @@ const HomePage = () => {
                 <span className="font-bold text-[40px]">Dashboard</span>
               </p>
               <p className=" text-[15px]">Upcoming Holiday: Easter</p>
+      <div className=" w-full lgss:w-4/5 flex flex-col h-full overflow-auto">
+        <div className="flex flex-col justify-between items-center text-primary w-full pt-[20px] px-[5%]">
+          <div className="w-full flex justify-between">
+            <h1 className="text-[28px] font-semibold text-secondary">
+              Dashboard
+            </h1>
+            <div className="lgss:hidden">
+              {isOpen ? (
+                <FaTimes
+                  onClick={() => setIsOpen(false)}
+                  className=" cursor-pointer text-red text-xl"
+                />
+              ) : (
+                <FaBars
+                  onClick={() => setIsOpen(true)}
+                  className=" cursor-pointer text-red text-xl"
+                />
+              )}
             </div>
             <div className="bg-[url('/src/assets/images/youngman2.png')] bg-no-repeat bg-center bg-contain w-[25%]  -mb-[6%] "></div>
           </div>
@@ -253,6 +272,9 @@ const HomePage = () => {
               ))}
             </div>
             {/* </div> */}
+          </div>
+          <div className="">
+            <div className="flex flex-col justify-center lgss:items-start lgss:pt-14 pt-4"></div>
           </div>
           <div className="">
             <div className="flex flex-col justify-center lgss:items-start lgss:pt-14 pt-4"></div>
