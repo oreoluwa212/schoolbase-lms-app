@@ -254,6 +254,9 @@ const HomePage = () => {
             </div>
             {/* </div> */}
           </div>
+          <div className="">
+            <div className="flex flex-col justify-center lgss:items-start lgss:pt-14 pt-4"></div>
+          </div>
         </div>
       </div>
     </div>

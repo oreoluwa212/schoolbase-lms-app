@@ -23,39 +23,56 @@ import MailPage from './pages/web-app/students-dashboard/MailPage';
 import SettingsPage from './pages/web-app/students-dashboard/Settings';
 import LandingPage from './pages/web-site/landingpage/LandingPage';
 import Timetable from './Calender';
+import AssessmentPage from './pages/web-app/students-dashboard/AssessmentPage';
+import PayFees from './pages/web-app/students-dashboard/PayFees';
+import StuSignUp from './pages/web-site/studentsOnboarding/StuSignUp';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<LandingPage />} />
-        <Route path='/get-started' element={<GetStarted />} />
-
-        <Route path='/student/dashboard' element={<HomePage />} />
-        <Route path='/student/student-life' element={<StudentsPage />} />
-        <Route path='/student/classes' element={<ClassesPage />} />
-        <Route path='/student/payments' element={<PaymentsPage />} />
-        <Route path='/student/mail' element={<MailPage />} />
-        <Route path='/student/settings' element={<SettingsPage />} />
-        <Route path='/get-started/teacher/signin' element={<SignInPage />} />
-        <Route path='/get-started/teacher/signup' element={<SignUpPage />} />
-        <Route path='/teacher/dashboard' element={<TeacherDashboard />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/get-started" element={<GetStarted />} />
+        <Route path="/get-started/student/signup" element={<StuSignUp />} />
+        <Route path="/student/dashboard" element={<HomePage />} />
+        <Route path="/student/student-life" element={<StudentsPage />} />
+        <Route path="/student/classes" element={<ClassesPage />} />
+        <Route path="/student/payments" element={<PaymentsPage />} />
+        <Route path="/student/payments/pay" element={<PayFees />} />
+        <Route path="/student/mail" element={<MailPage />} />
+        <Route path="/student/assessment" element={<AssessmentPage />} />
+        <Route path="/student/settings" element={<SettingsPage />} />
+        <Route path="/get-started/teacher/signin" element={<SignInPage />} />
+        <Route path="/get-started/teacher/signup" element={<SignUpPage />} />
+        <Route path="/teacher/dashboard" element={<TeacherDashboard />} />
         <Route
-          path='/teacher/dashboard/class-records'
+          path="/teacher/dashboard/class-records"
           element={<ClassRecords />}
         />
-        <Route path='/teacher/dashboard/classes' element={<Classes />} />
-        <Route path='/teacher/dashboard/attendance' element={<Attendance />} />
-        <Route path='/teacher/dashboard/exams' element={<Exams />} />
-        <Route path='/teacher/dashboard/settings' element={<Settings />} />
+        <Route path="/teacher/dashboard/classes" element={<Classes />} />
+        <Route path="/teacher/dashboard/attendance" element={<Attendance />} />
+        <Route path="/teacher/dashboard/exams" element={<Exams />} />
+        <Route path="/teacher/dashboard/settings" element={<Settings />} />
         <Route
-          path='/teacher/dashboard/exams/history'
+          path="/teacher/dashboard/exams/history"
           element={<QuizHistory />}
         />
         <Route path="/get-started/applicantregistration" element={<ApplicantReg />} />
         <Route path="/get-started/applicantcontact" element={<ApplicantContact />} />
         <Route path="/get-started/applicantacademiainfo" element={<ApplicantAcademiaInfo />} />
         <Route path='/calender' element={<Timetable />} />
+        <Route
+          path="/get-started/applicantregistration"
+          element={<ApplicantReg />}
+        />
+        <Route
+          path="/get-started/applicantcontact"
+          element={<ApplicantContact />}
+        />
+        <Route
+          path="/get-started/applicantacademiainfo"
+          element={<ApplicantAcademiaInfo />}
+        />
       </Routes>
     </Router>
   );

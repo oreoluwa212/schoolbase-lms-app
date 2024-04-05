@@ -41,6 +41,14 @@ import bell from '../assets/images/bell.png'
 import mobile from '../assets/images/mobile.png'
 import calender from '../assets/images/calender.png'
 import Eventpix from '../assets/images/Eventpix.png'
+import chemistry from '../assets/images/chemistry.png'
+import biology from '../assets/images/biology.png'
+import arts from '../assets/images/arts.png'
+import geography from "../assets/images/geography.png";
+import maths from "../assets/images/mathematics.png";
+import physics from "../assets/images/physics.png";
+import teachImg from "../assets/images/teachImg.png";
+import studentImg from '../assets/images/avatar-4.png'
 
 export {
   schoolbaseLogo,
@@ -85,5 +93,13 @@ export {
   bell,
   mobile,
   calender,
-  Eventpix
+  Eventpix,
+  biology,
+  physics,
+  maths,
+  arts,
+  chemistry,
+  geography,
+  teachImg,
+  studentImg
 };

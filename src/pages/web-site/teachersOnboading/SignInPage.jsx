@@ -1,25 +1,24 @@
 import React from "react";
-import "../../../styles/signup-teachers.css";
 import { Link } from "react-router-dom";
 import { signupImg } from "../../../assets";
 
 const SignInPage = () => {
   return (
-    <div className="signin-container">
-      <div className="signin-left-container">
+    <div className="">
+      <div className="">
         <Link to={"/"}>
           <h1>SchoolBase</h1>
         </Link>
         <img src={signupImg} alt="" />
       </div>
-      <form className="login-right-container">
+      <form className="">
         <Link to={"/"}>
           <h1>Login to your account </h1>
         </Link>
         <div className="">
-          <div className="signin-form-col">
-            <div className="signin-form">
-              <label htmlFor="email" className="label">
+          <div className="">
+            <div className="">
+              <label htmlFor="email" className="">
                 Email Address
               </label>
               <input
@@ -29,7 +28,7 @@ const SignInPage = () => {
                 placeholder="Pasword"
               />
             </div>
-            <div className="signin-form">
+            <div className="">
               <label htmlFor="surname" className="label">
                 Password
               </label>

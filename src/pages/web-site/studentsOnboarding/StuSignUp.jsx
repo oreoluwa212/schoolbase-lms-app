@@ -1,23 +1,27 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { signupImg } from "../../../assets";
-import { FormControl, MenuItem, Select } from "@mui/material";
+import {
+  FormControl,
+  MenuItem,
+  Select,
+} from "@mui/material";
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
 
-const SignUpPage = () => {
-  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
-  function togglePasswordVisibility() {
-    setIsPasswordVisible((prevState) => !prevState);
-  }
+const StuSignUp = () => {
+    const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+    function togglePasswordVisibility() {
+      setIsPasswordVisible((prevState) => !prevState);
+    }
   return (
     <div className="flex h-screen bg-gray-100">
-      <div className="hidden lgss:flex lgss:w-1/2 bg-signUpBg flex-col justify-center items-center px-8">
+      <div className="w-1/2 bg-signUpBg flex flex-col justify-center items-center px-8">
         <Link to={"/"} className="mb-8">
           <h1 className="text-4xl font-semibold text-primary">SchoolBase</h1>
         </Link>
         <img src={signupImg} alt="SignUp" className="w-3/4" />
       </div>
-      <form className="w-full lgss:w-1/2 flex flex-col justify-center items-start px-8">
+      <form className="w-1/2 flex flex-col justify-center items-start px-8">
         <div className="py-4">
           <h1 className="text-[26px] font-extrabold cursor-pointer">
             Create your account
@@ -123,6 +127,48 @@ const SignUpPage = () => {
           </div>
           <div className="flex flex-row w-[90%] space-x-8">
             <div className="flex flex-col w-1/2">
+              <label htmlFor="class" className="text-[18px] font-semibold">
+                Class
+              </label>
+              <div className="">
+                <FormControl
+                  className="w-full bg-white text-[#97999C] shadow-lg shadow-gray-400/70"
+                  size="small"
+                >
+                  <Select
+                    label="class"
+                    sx={{
+                      "& fieldset": { border: "none" },
+                    }}
+                  >
+                    <MenuItem value="Male">JSS 1</MenuItem>
+                    <MenuItem value="Female">JSS 2</MenuItem>
+                    <MenuItem value="Other">JSS 3</MenuItem>
+                    <MenuItem value="Other">SSS 1</MenuItem>
+                    <MenuItem value="Other">SSS 2</MenuItem>
+                    <MenuItem value="Other">SSS 3</MenuItem>
+                  </Select>
+                </FormControl>
+              </div>
+            </div>
+            <div className="flex flex-col w-1/2">
+              <label
+                htmlFor="phone number"
+                className="text-[18px] font-semibold"
+              >
+                Phone Number
+              </label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Phone Number"
+                className="py-2 shadow-lg shadow-gray-400/70 outline-none px-2"
+              />
+            </div>
+          </div>
+          <div className="flex flex-row w-[90%] space-x-8">
+            <div className="flex flex-col w-1/2">
               <label
                 htmlFor="residential address"
                 className="text-[18px] font-semibold"
@@ -184,10 +230,8 @@ const SignUpPage = () => {
             </div>
           </div>
         </div>
-        <Link className="w-[90%]" to={"/teacher/dashboard"}>
-          <button className="bg-primary w-full py-3 mt-8 text-white font-semibold text-[18px] rounded-[16px]">
-            Sign Up
-          </button>
+        <Link className="w-[90%]" to={"/student/dashboard"}>
+          <button className="bg-primary w-full py-3 mt-8 text-white font-semibold text-[18px] rounded-[16px]">Sign Up</button>
         </Link>
         <p className="text-center w-full font-semibold mt-3">
           Already have an account?{" "}
@@ -203,4 +247,4 @@ const SignUpPage = () => {
   );
 };
 
-export default SignUpPage;
+export default StuSignUp;

@@ -35,9 +35,9 @@ const Choose = () => {
        </div>
         <p className="font-semibold text-3xl">All-in-one platform</p>
       </div>
-     <div className="flex w-11/12  ">
+     <div className="flex lgss:flex-row flex-wrap justify-center gap-4 w-11/12 overflow-x-hidden">
      {features.map((i) => (
-        <div className="rounded-2xl w-1/4 mx-2 p-[19.3px]" style={{boxShadow: '-1px 1px 42px 0px rgba(189,215,255,0.75)'
+        <div className="rounded-2xl w-1/3 lgss:w-[250px] mx-2 p-[19.3px]" style={{boxShadow: '-1px 1px 42px 0px rgba(189,215,255,0.75)'
         }}>
           <img src={i.imageSrc} alt="" className="w-[127px] h-[152px]"/>
           <h1 className="font-semibold text-2xl">{i.title}</h1>
