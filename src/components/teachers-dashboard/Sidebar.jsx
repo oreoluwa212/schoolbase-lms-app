@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { schoolbaseLogo } from "../../assets/index.js";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { HiOutlineLogout } from "react-icons/hi";
 import { RiBookOpenFill } from "react-icons/ri";
 import { BsFillCreditCardFill, BsPeopleFill } from "react-icons/bs";
@@ -8,26 +8,27 @@ import { FaUserPen } from "react-icons/fa6";
 import { FaGraduationCap, FaHome } from "react-icons/fa";
 
 const Sidebar = ({ isOpen }) => {
-    const handleLogout = () => {
-      localStorage.clear();
-    };
+  const handleLogout = () => {
+    localStorage.clear();
+  };
+  const navigate = useNavigate();
   const [activebutton, setActiveButton] = useState(1);
-    useEffect(() => {
-      if (location.pathname === "/teacher/dashboard") setActiveButton(1);
-      else if (location.pathname === "/teacher/dashboard/class-records") setActiveButton(2);
-      else if (
-        location.pathname === "/teacher/dashboard/classes"
-      )
-        setActiveButton(3);
-      else if (location.pathname === "/teacher/dashboard/attendance") setActiveButton(4);
-      else if (
-        location.pathname === "/teacher/dashboard/exams" ||
-        location.pathname === "/teacher/dashboard/exams/history"
-      )
-        setActiveButton(5);
-      else if (location.pathname === "/teacher/dashboard/settings")
-        setActiveButton(6);
-    }, [location.pathname]);
+  useEffect(() => {
+    if (location.pathname === "/teacher/dashboard") setActiveButton(1);
+    else if (location.pathname === "/teacher/dashboard/class-records")
+      setActiveButton(2);
+    else if (location.pathname === "/teacher/dashboard/classes")
+      setActiveButton(3);
+    else if (location.pathname === "/teacher/dashboard/attendance")
+      setActiveButton(4);
+    else if (
+      location.pathname === "/teacher/dashboard/exams" ||
+      location.pathname === "/teacher/dashboard/exams/history"
+    )
+      setActiveButton(5);
+    else if (location.pathname === "/teacher/dashboard/settings")
+      setActiveButton(6);
+  }, [location.pathname]);
 
   return (
     <>
@@ -203,14 +204,11 @@ const Sidebar = ({ isOpen }) => {
                 <h4 className="">Settings</h4>
               </Link>
 
-              <Link 
-              to={"/get-started"}>
-              <button
-                className="flex gap-5 text-[18px] text-[#B82323] items-center  font-medium pl-12 h-[40%] w-full border-t-2 "
-              >
-                Sign Out
-                <HiOutlineLogout />
-              </button>
+              <Link to={"/get-started"}>
+                <button className="flex gap-5 text-[18px] text-[#B82323] items-center  font-medium pl-12 h-[40%] w-full border-t-2 ">
+                  Sign Out
+                  <HiOutlineLogout />
+                </button>
               </Link>
             </div>
           </div>

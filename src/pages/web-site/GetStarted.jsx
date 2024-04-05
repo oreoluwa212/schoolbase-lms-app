@@ -15,7 +15,7 @@ const GetStarted = () => {
         navigate("/get-started/applicant/registration");
         break;
       case "student":
-        navigate("/student/dashboard");
+        navigate("/get-started/student/signup");
         break;
       case "teacher":
         navigate("/get-started/teacher/signup");

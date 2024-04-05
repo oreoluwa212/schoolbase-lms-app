@@ -34,6 +34,17 @@ import SlideImgThree from '../assets/images/slideImgThree.svg'
 import SlideImgFour from '../assets/images/slideImgFour.svg'
 import Star from '../assets/images/star.svg'
 import unionImg from '../assets/images/Union.svg'
+import youngman2 from '../assets/images/youngman2.png'
+import search from '../assets/images/Search.png'
+import Notification from '../assets/images/Notification.png'
+import userpix from '../assets/images/userpix.png'
+import mathspix from '../assets/images/mathspix.png'
+import geographypix from '../assets/images/geographypix.png'
+import biologypix from '../assets/images/biologypix.png'
+import bell from '../assets/images/bell.png'
+import mobile from '../assets/images/mobile.png'
+import calender from '../assets/images/calender.png'
+import Eventpix from '../assets/images/Eventpix.png'
 import chemistry from '../assets/images/chemistry.png'
 import biology from '../assets/images/biology.png'
 import arts from '../assets/images/arts.png'
@@ -41,6 +52,8 @@ import geography from "../assets/images/geography.png";
 import maths from "../assets/images/mathematics.png";
 import physics from "../assets/images/physics.png";
 import teachImg from "../assets/images/teachImg.png";
+import studentImg from '../assets/images/avatar-4.png'
+import loginImg from '../assets/images/loginImg.png'
 
 export {
   schoolbaseLogo,
@@ -79,6 +92,17 @@ export {
   cycle,
   Call,
   unionImg,
+  youngman2,
+  search,
+  Notification,
+  userpix,
+  mathspix,
+  biologypix,
+  geographypix,
+  bell,
+  mobile,
+  calender,
+  Eventpix,
   biology,
   physics,
   maths,
@@ -86,4 +110,6 @@ export {
   chemistry,
   geography,
   teachImg,
+  studentImg,
+  loginImg
 };

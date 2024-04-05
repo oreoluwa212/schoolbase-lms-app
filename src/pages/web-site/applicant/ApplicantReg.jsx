@@ -5,7 +5,6 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import {
   TextField,
-  InputLabel,
   FormControl,
   MenuItem,
   Select,
@@ -18,8 +17,6 @@ const ApplicantReg = () => {
   const handleChange = (event) => {
     setGender(event.target.value);
   };
-
-  //   flex w-11/12 justify-between lgss: m-auto gap-x-12
 
   return (
     <div className="font-manrope bg-blueBg">
@@ -129,7 +126,6 @@ const ApplicantReg = () => {
               className="w-full bg-white text-[#97999C] rounded-md shadow-2xl"
               size="small"
             >
-              <InputLabel id="demo-simple-select-label">Gender</InputLabel>
               <Select
                 //   labelId="demo-simple-select-label"
                 //   id="demo-simple-select"

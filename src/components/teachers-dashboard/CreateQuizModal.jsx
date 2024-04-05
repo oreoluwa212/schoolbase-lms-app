@@ -3,7 +3,7 @@ import CalendarComponent from './CalendarComponent';
 
 const CreateQuizModal = () => {
   return (
-    <div className='xl:px-16 px-12 xl:py-16 py-12 grid xl:grid-cols-2 grid-cols-1 gap-12 items-center justify-center w-[80%] bg-blue-200'>
+    <div className='xl:px-16 xl:py-16 py-12 xl:mx-16 mx-12 xl:my-20 my-12 grid xl:grid-cols-2 grid-cols-1 gap-12 items-center justify-center xl:border rounded-3xl'>
       <div className='flex flex-col justify-between xl:h-[450px] xl:grid-col-auto grid-col-1'>
         <div className='flex flex-col gap-10 '>
           <div className='flex flex-col gap-1'>
