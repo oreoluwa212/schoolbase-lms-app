@@ -12,7 +12,7 @@ const GetStarted = () => {
   const handleProceedClick = () => {
     switch (activeButton) {
       case "applicant":
-        navigate("/get-started/applicantregistration");
+        navigate("/get-started/applicant/registration");
         break;
       case "student":
         navigate("/get-started/student/signup");

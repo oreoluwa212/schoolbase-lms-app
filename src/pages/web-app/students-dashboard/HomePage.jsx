@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Progress } from "antd";
+// import { Progress } from "antd";
 import "../../../styles/studentdashboard/HomePage.css";
 import { useLocation, Link } from "react-router-dom";
 import SideBar from "../../../components/students-dashboard/Sidebar";

@@ -9,6 +9,10 @@ import cycle from "../assets/images/cycle.png"
 import Call from "../assets/images/phoneIcon.png"
 import nigerianWoman from '../assets/images/nigerianWoman.jpg';
 import ApplicantImg from "./images/Group 1171276362.png";
+import semicircle from "./images/semicircle.png";
+import circle1 from "./images/circle1.png";
+import circle2 from "./images/circle2.png";
+import envelope from "./images/envelope.png";
 import quiz from '../assets/images/quiz.png';
 import history from '../assets/images/history.png';
 import callIcon from '../assets/images/callicon.svg'
@@ -57,6 +61,10 @@ export {
   quiz,
   history,
   ApplicantImg,
+  semicircle,
+  circle1,
+  circle2,
+  envelope,
   signupImg,
   callIcon,
   peopleHero,
