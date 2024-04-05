@@ -30,6 +30,17 @@ import SlideImgThree from '../assets/images/slideImgThree.svg'
 import SlideImgFour from '../assets/images/slideImgFour.svg'
 import Star from '../assets/images/star.svg'
 import unionImg from '../assets/images/Union.svg'
+import youngman2 from '../assets/images/youngman2.png'
+import search from '../assets/images/Search.png'
+import Notification from '../assets/images/Notification.png'
+import userpix from '../assets/images/userpix.png'
+import mathspix from '../assets/images/mathspix.png'
+import geographypix from '../assets/images/geographypix.png'
+import biologypix from '../assets/images/biologypix.png'
+import bell from '../assets/images/bell.png'
+import mobile from '../assets/images/mobile.png'
+import calender from '../assets/images/calender.png'
+import Eventpix from '../assets/images/Eventpix.png'
 
 export {
   schoolbaseLogo,
@@ -63,5 +74,16 @@ export {
   Ellipse,
   cycle,
   Call,
-  unionImg
+  unionImg,
+  youngman2,
+  search,
+  Notification,
+  userpix,
+  mathspix,
+  biologypix,
+  geographypix,
+  bell,
+  mobile,
+  calender,
+  Eventpix
 };

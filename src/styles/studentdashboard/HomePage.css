@@ -1,0 +1,30 @@
+.dashboard{
+  background: linear-gradient(90deg, #FEE1F9 0%, #9CA6D1 100%);
+}
+.love{
+  /* filter: drop-shadow(0px 4px 16px); */
+  background-color: rgba(61, 94, 225, 0.15);
+  border-radius: 8px;
+}
+.hate img{
+  width: 15px;
+}
+ .progress .ant-progress-inner{
+    width: 30px !important;
+    height: 30px !important;
+  }
+.progress .ant-progress-text{
+  font-size: 10px !important;
+}
+.overall .ant-progress-text{
+  font-weight: 700 !important;
+  font-size: 24 !important;
+  font-family: 'manrope' !important;
+}
+.overall .ant-progress-inner{
+  height: 200px !important;
+  width: 200px !important;
+}
+/* .progress .ant-progress-circle{
+  height: 50px !important;
+} */

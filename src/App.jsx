@@ -22,6 +22,7 @@ import PaymentsPage from './pages/web-app/students-dashboard/PaymentsPage';
 import MailPage from './pages/web-app/students-dashboard/MailPage';
 import SettingsPage from './pages/web-app/students-dashboard/Settings';
 import LandingPage from './pages/web-site/landingpage/LandingPage';
+import Timetable from './Calender';
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function App() {
         <Route path="/get-started/applicantregistration" element={<ApplicantReg />} />
         <Route path="/get-started/applicantcontact" element={<ApplicantContact />} />
         <Route path="/get-started/applicantacademiainfo" element={<ApplicantAcademiaInfo />} />
+        <Route path='/calender' element={<Timetable />} />
       </Routes>
     </Router>
   );
