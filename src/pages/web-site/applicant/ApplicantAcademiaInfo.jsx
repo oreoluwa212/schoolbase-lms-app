@@ -199,7 +199,7 @@ const ApplicantAcademiaInfo = () => {
                 </button>
               </div>
             </Link>
-            <Link to='/get-started/applicant/emailverification'>
+            <Link to="/get-started/applicant/emailverification">
               <div className="">
                 <button className="border hover:bg-white hover:text-[#3D5EE1] bg-[#3D5EE1] text-white rounded-md h-10 w-36 cursor-pointer my-2">
                   Continue

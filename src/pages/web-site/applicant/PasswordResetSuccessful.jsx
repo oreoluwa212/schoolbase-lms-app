@@ -1,9 +1,9 @@
 import { semicircle } from "../../../assets";
 import { circle1 } from "../../../assets";
 import { circle2 } from "../../../assets";
-import { envelope } from "../../../assets";
+import { Link } from "react-router-dom";
 
-const EmailVerification = () => {
+const PasswordResetSuccessful = () => {
   return (
     <div className="bg-blueBg h-screen relative">
       <div className="px-7 py-10 w-1/3">
@@ -15,26 +15,23 @@ const EmailVerification = () => {
         <img className="absolute top-40" src={semicircle} alt="" />
       </div>
       <div className="font-manrope text-center py-24 text-xs bg-white border-black m-auto w-3/4 h-1/2 rounded-3xl shadow-2xl lgss:w-3/5">
-        <p className="font-bold text-lg lgss:text-3xl">
-          An email has been sent to you
+        <p className="font-bold text-lg md:text-2xl">
+          You’ve reset your password
         </p>
-        <p className="mt-3 font-medium lgss:font-semibold">
-          A confirmation email has been sent to your{" "}
+        <p className="mt-3 w-52 text-center m-auto text-xs font-medium md:w-96 lgss:font-semibold">
+          Well done. Now you can continue to MatchLesson.
         </p>
-        <p className="mb-3 lgss:font-semibold lgss:mb-5">
-          email address, (abimbolawilliams@gmail.com).
-        </p>
-        <img
-          className="m-auto lgss:w-16"
-          src={envelope}
-          width={60}
-          height={50}
-          alt=""
-        />
+        <Link to="">
+          <div className="">
+            <button className="font-semibold border hover:bg-white hover:text-[#3D5EE1] bg-[#3D5EE1] text-white text-xs rounded-md h-12 mt-10 w-3/4 cursor-pointer md:w-2/3 lgss:w-2/4">
+              Proceed to your dashboard
+            </button>
+          </div>
+        </Link>
       </div>
       <div>
         <img
-          className="md:block hidden absolute right-7 bottom-96 lgss:right-28 lgss:top-80"
+          className="md:block hidden absolute right-7 bottom-96 md:top-64 lgss:right-28 lgss:top-64"
           src={circle1}
           width={50}
           height={50}
@@ -52,4 +49,4 @@ const EmailVerification = () => {
   );
 };
 
-export default EmailVerification;
+export default PasswordResetSuccessful;

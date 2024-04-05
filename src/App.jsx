@@ -14,6 +14,11 @@ import ApplicantReg from './pages/web-site/applicant/ApplicantReg';
 import ApplicantContact from './pages/web-site/applicant/ApplicantContact'; 
 import ApplicantAcademiaInfo from './pages/web-site/applicant/ApplicantAcademiaInfo';
 import EmailVerification from './pages/web-site/applicant/EmailVerification';
+import CreatePassword from './pages/web-site/applicant/CreatePassword';
+import ResetPassword from './pages/web-site/applicant/ResetPassword';
+import ResetPasswordVerification from './pages/web-site/applicant/ResetPasswordVerification';
+import PasswordResetSuccessful from './pages/web-site/applicant/PasswordResetSuccessful';
+import ConfirmEmail from './pages/web-site/applicant/ConfirmEmail';
 import SignInPage from './pages/web-site/teachersOnboading/SignInPage';
 import SignUpPage from './pages/web-site/teachersOnboading/SignUpPage';
 import HomePage from './pages/web-app/students-dashboard/HomePage';
@@ -56,6 +61,11 @@ function App() {
         <Route path="/get-started/applicant/contact" element={<ApplicantContact />} />
         <Route path="/get-started/applicant/academiainfo" element={<ApplicantAcademiaInfo />} />
         <Route path="/get-started/applicant/emailverification" element={<EmailVerification />} />
+        <Route path="/get-started/applicant/createpassword" element={<CreatePassword />} />
+        <Route path="/get-started/applicant/resetpassword" element={<ResetPassword />} />
+        <Route path="/get-started/applicant/resetpasswordverification" element={<ResetPasswordVerification />} />
+        <Route path="/get-started/applicant/passwordresetsuccessful" element={<PasswordResetSuccessful />} />
+        <Route path="/get-started/applicant/confirmemail" element={<ConfirmEmail />} />
       </Routes>
     </Router>
   );

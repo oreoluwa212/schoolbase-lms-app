@@ -26,17 +26,17 @@ const ApplicantReg = () => {
       <div className="text-center text-xl border-b-4 font-extrabold py-5">
         <h1 className="">ADMISSION FORM</h1>
       </div>
-      <div className="flex w-4/5 m-auto">
+      <div className="flex w-4/5 m-auto lgss:border lgss:justify-between">
         <div className="my-6">
           <img
-            className="md:block hidden lg: w-full h-full mr-48 px-12"
+            className="lgss:block hidden w-full h-full pr-20"
             width={100}
             height={50}
             src={ApplicantImg}
             alt=""
           />
         </div>
-        <form className="my-6 w-11/12">
+        <form className="my-6 w-11/12 md:w-9/12 md:m-auto md:mt-10 lgss:border lgss:w-8/12">
           <div className="">
             <p className="text-sm mb-0.5 font-semibold text-[#4D4D4E]">
               First name
@@ -60,7 +60,7 @@ const ApplicantReg = () => {
             />
           </div>
 
-          <div className="mt-0.5">
+          <div className="mt-2">
             <p className="text-sm mb-0.5 font-semibold text-[#4D4D4E]">
               Middle name
             </p>
