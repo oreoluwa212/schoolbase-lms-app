@@ -10,7 +10,7 @@ class Timetable extends React.Component {
     this.state = {
       courses: [
         { day: "Mon", time: "8:00 AM", subject: "Maths" },
-        { day: "Tue", time: "10:00 AM", subject: "Geography" },
+        { day: "Tue", time: "9:00 AM", subject: "Geography" },
         { day: "Wed", time: "12:00 PM", subject: "English" },
         { day: "Thur", time: "2:00 PM", subject: "Biology" },
         { day: "Fri", time: "4:00 PM", subject: "Physics" },
