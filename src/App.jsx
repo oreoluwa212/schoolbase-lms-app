@@ -20,7 +20,7 @@ import PasswordResetSuccessful from "./pages/web-site/applicant/PasswordResetSuc
 import ConfirmEmail from "./pages/web-site/applicant/ConfirmEmail";
 import SignInPage from "./pages/web-site/teachersOnboading/SignInPage";
 import SignUpPage from "./pages/web-site/teachersOnboading/SignUpPage";
-import HomePage from "./pages/web-app/students-dashboard/HomePage";
+import TemporaryHome from "./pages/web-app/students-dashboard/TemporaryHome";
 import StudentsPage from "./pages/web-app/students-dashboard/StudentsPage";
 import ClassesPage from "./pages/web-app/students-dashboard/ClassesPage";
 import PaymentsPage from "./pages/web-app/students-dashboard/PaymentsPage";
@@ -39,7 +39,8 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/get-started" element={<GetStarted />} />
         <Route path="/get-started/student/signup" element={<StuSignUp />} />
-        <Route path="/student/dashboard" element={<HomePage />} />
+        {/* <Route path="/student/dashboard" element={<HomePage />} /> */}
+        <Route path="/student" element={<TemporaryHome /> }/>
         <Route path="/student/student-life" element={<StudentsPage />} />
         <Route path="/student/classes" element={<ClassesPage />} />
         <Route path="/student/payments" element={<PaymentsPage />} />

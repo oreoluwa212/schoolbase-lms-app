@@ -230,7 +230,7 @@ const StuSignUp = () => {
             </div>
           </div>
         </div>
-        <Link className="w-[90%]" to={"/student/dashboard"}>
+        <Link className="w-[90%]" to={"/student"}>
           <button className="bg-primary w-full py-3 mt-8 text-white font-semibold text-[18px] rounded-[16px]">Sign Up</button>
         </Link>
         <p className="text-center w-full font-semibold mt-3">
