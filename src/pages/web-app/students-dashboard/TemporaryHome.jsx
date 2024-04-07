@@ -6,17 +6,15 @@ import SideBar from "../../../components/students-dashboard/Sidebar";
 import { FaBars, FaTimes } from "react-icons/fa";
 import {
   Eventpix,
-  Notification,
   bell,
   biologypix,
   calender,
   geographypix,
   mathspix,
   mobile,
-  search,
-  userpix,
   youngman2,
 } from "../../../assets";
+import SearchHead from "./SearchHead";
 
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -104,32 +102,17 @@ const HomePage = () => {
               )}
             </div>
           </div>
-          <div className="flex justify-between items-center py-3 px-2 md:px-[unset] ">
-            <div className="flex border-[1px] border-[#DCDDE0] rounded-xl w-[50%] md:w-[60%] h-[70%]">
-              <button className="flex justify-center items-center">
-                <img src={search} alt="" className="w-[70%] " />
-              </button>
-              <input type="search" className="outline-none w-full rounded-xl" />
-            </div>
-            <div className="flex items-center md:gap-2">
-              <div className="flex flex-col">
-                <p>Hi</p>
-                <p>Ada Smith</p>
-              </div>
-              <img src={userpix} alt="" />
-              <img src={Notification} alt="" />
-            </div>
-          </div>
+          <SearchHead />
 
           <div className="dashboard flex justify-between items-cente md:px-10  h-[30%">
-            <div className=" text-[#1E1E1E] flex flex-col font-normal font-manrope gap-2 py-5 px-2 md:px-[unset]">
+            <div className=" text-[#1E1E1E] flex flex-col font-normal font-manrope gap-2 py-5 px-3 md:px-[unset]">
               <p className="text-[24px] md:w-[50%]">
                 Welcome to your{" "}
                 <span className="font-bold text-[40px]">Dashboard</span>
               </p>
               <p className=" text-[15px]">Upcoming Holiday: Easter</p>
             </div>
-            <div className="bg-[url('/src/assets/images/youngman2.png')] bg-no-repeat bg-center bg-cover md:bg-contain w-[40%]  -mb-[6%] md:-mb-[5%] md:relative md:left-10">
+            <div className="bg-[url('/src/assets/images/youngman2.png')] bg-no-repeat bg-center bg-contain w-[40%] -mb-[5%]">
               <img src={youngman2} alt="" className="hidden" />
             </div>
           </div>
@@ -137,7 +120,7 @@ const HomePage = () => {
           <div className="flex flex-col md:flex-row py-5 md:gap-5 gap-10">
             <div className="flex flex-col gap-10">
               <div className="flex flex-col gap-2 w-[90%] md:w-[unset] m-auto md:m-[unset]">
-                <div className="flex justify-between px-[5%] md:px-[unset]">
+                <div className="flex justify-between px-[6%] md:px-[unset]">
                   <p>Classes</p>
                   <p>see all</p>
                 </div>
@@ -169,10 +152,10 @@ const HomePage = () => {
                 </div>
               </div>
               <div
-                className="flex flex-col md:flex-row gap-2 w-[80%] md:w-[unset] m-auto md:m-[unset]"
+                className="flex flex-col md:flex-row gap-2 md:w-[unset] m-auto md:m-[unset] items-center"
                 style={{ fontFamily: "" }}
               >
-                <div className="love flex flex-col justify-center items-center md:w-[184px] h-[300px] md:h-[184px] gap-2">
+                <div className="love flex flex-col justify-center items-center md:w-[184px] h-[300px] md:h-[184px] gap-2 w-[290px] m-auto">
                   <img src={calender} alt="" />
                   <Link to="/calender">
                     <p>Timetable</p>
@@ -183,7 +166,7 @@ const HomePage = () => {
                     key={items.id}
                     className={items.id === 1 ? "love" : "hate"}
                   >
-                    <div className="flex flex-col gap-2 items-center shadow-xl rounded-xl h-[300px] md:h-[184px] md:w-[200px] text-center justify-center">
+                    <div className="flex flex-col gap-2 items-center shadow-xl rounded-xl h-[300px] md:h-[184px] md:w-[200px] text-center justify-center w-[290px] m-auto">
                       <img src={items.image} alt="" />
                       <p>{items.name}</p>
                     </div>
@@ -195,7 +178,7 @@ const HomePage = () => {
               <p className="font-[josefin sans] text-[24px] font-semibold opacity-[0.5]">
                 Overall Performance
               </p>
-              <div className="overall flex flex-col justify-center  shadow-lg md:h-full items-center md:w-full md:gap-10 m-auto w-[80%] gap-5 py-2">
+              <div className="overall flex flex-col justify-center  shadow-lg md:h-full items-center md:w-full md:gap-10 m-auto w-[290px] gap-5 py-2">
                 <Progress
                   type="circle"
                   steps={10}
@@ -221,9 +204,9 @@ const HomePage = () => {
             </div>
           </div>
           <div className="flex flex-col md:flex-row gap-5 ">
-            <div className="flex flex-col border-[2px] border-[#F0F7FF] md:w-[40%] w-full gap-2 px-2 ">
+            <div className="flex flex-col border-[2px] border-[#F0F7FF] md:w-[40%] w-full gap-2 p-5 ">
               <div className="flex justify-between">
-                <p>StaffRoom</p>
+                <p>Staff Room</p>
                 <p className="">See all</p>
               </div>
               <hr />
@@ -268,11 +251,11 @@ const HomePage = () => {
             </div>
             {/* <div className="w-[50%] flex bg-[#EFF2FE]"> */}
             <div
-              className="flex flex-col justify-between md:w-[60%] h-[100% bg-[#EFF2FE] px-2"
+              className="flex flex-col justify-between md:w-[60%] h-[100% bg-[#EFF2FE] p-5"
               style={{ fontFamily: "" }}
             >
               <div className="flex justify-between">
-                <p>Upcomming Events</p>
+                <p>Upcoming Events</p>
                 <p>See all</p>
               </div>
               <hr />
