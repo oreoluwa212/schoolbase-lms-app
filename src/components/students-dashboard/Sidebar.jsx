@@ -43,7 +43,7 @@ const Sidebar = ({ isOpen }) => {
         </div>
         <div className="mt-16 w-full flex flex-col gap-2 justify-start items-center font-manrope">
           <Link
-            to="/student/dashboard"
+            to="/student"
             className={
               activebutton === 1
                 ? "flex text-[18px] text-white items-center font-medium pl-16 bg-primary w-full gap-5 h-[60px]"
@@ -139,7 +139,7 @@ const Sidebar = ({ isOpen }) => {
             </div>
             <div className="mt-16 w-full flex flex-col gap-2 justify-start items-start font-manrope">
               <Link
-                to="/student/dashboard"
+                to="/student"
                 className={
                   activebutton === 1
                     ? "flex text-[18px] text-white items-center font-medium pl-12 bg-primary w-full gap-5 h-[60px]"
