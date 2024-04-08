@@ -31,6 +31,7 @@ import Timetable from "./Calender";
 import AssessmentPage from "./pages/web-app/students-dashboard/AssessmentPage";
 import PayFees from "./pages/web-app/students-dashboard/PayFees";
 import StuSignUp from "./pages/web-site/studentsOnboarding/StuSignUp";
+import SigninPage from "./pages/web-site/studentsOnboarding/SigninPage";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/get-started" element={<GetStarted />} />
         <Route path="/get-started/student/signup" element={<StuSignUp />} />
+        <Route path="/get-started/student/signin" element={<SigninPage />} />
         {/* <Route path="/student/dashboard" element={<HomePage />} /> */}
         <Route path="/student" element={<TemporaryHome /> }/>
         <Route path="/student/student-life" element={<StudentsPage />} />

@@ -12,6 +12,7 @@ const Sidebar = ({ isOpen }) => {
     localStorage.clear();
   };
   const navigate = useNavigate();
+
   const [activebutton, setActiveButton] = useState(1);
   useEffect(() => {
     if (location.pathname === "/teacher/dashboard") setActiveButton(1);
@@ -32,7 +33,7 @@ const Sidebar = ({ isOpen }) => {
 
   return (
     <>
-      <div className="border w-[20%] hidden lgss:flex flex-col items-center pt-12 pb-10 h-screen justify-between font-bold text-[#7D7676] text-sm sidebar">
+      <div className="border w-[20%] hidden lgss:flex flex-col items-center pt-12 pb-10 justify-between font-bold overflow-y-hidden text-[#7D7676] text-sm sidebar">
         <div className="w-full h-[70px] text-[26px] font-extrabold">
           <img src={schoolbaseLogo} alt="" className="w-full h-full bg-cover" />
           <h1 className="text-center pt-2">
@@ -204,12 +205,13 @@ const Sidebar = ({ isOpen }) => {
                 <h4 className="">Settings</h4>
               </Link>
 
-              <Link to={"/get-started"}>
-                <button className="flex gap-5 text-[18px] text-[#B82323] items-center  font-medium pl-12 h-[40%] w-full border-t-2 ">
-                  Sign Out
-                  <HiOutlineLogout />
-                </button>
-              </Link>
+              <button
+                onClick={() => navigate("/get-started")}
+                className="flex gap-5 text-[18px] text-[#B82323] items-center  font-medium pl-12 h-[40%] w-full border-t-2 "
+              >
+                Sign Out
+                <HiOutlineLogout />
+              </button>
             </div>
           </div>
         </div>

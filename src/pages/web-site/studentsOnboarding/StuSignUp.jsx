@@ -15,21 +15,21 @@ const StuSignUp = () => {
     }
   return (
     <div className="flex h-screen bg-gray-100">
-      <div className="w-1/2 bg-signUpBg flex flex-col justify-center items-center px-8">
+      <div className="bg-signUpBg hidden lgss:flex lgss:w-1/2 flex-col justify-start items-start">
         <Link to={"/"} className="mb-8">
           <h1 className="text-4xl font-semibold text-primary">SchoolBase</h1>
         </Link>
         <img src={signupImg} alt="SignUp" className="w-3/4" />
       </div>
-      <form className="w-1/2 flex flex-col justify-center items-start px-8">
+      <form className="lgss:w-1/2 flex flex-col justify-center items-start px-8">
         <div className="py-4">
           <h1 className="text-[26px] font-extrabold cursor-pointer">
             Create your account
           </h1>
         </div>
         <div className="flex flex-col w-full space-y-3">
-          <div className="flex flex-row w-[90%] space-x-8">
-            <div className="flex flex-col w-1/2">
+          <div className="flex flex-col lgss:flex-row w-[90%] lgss:space-x-8">
+            <div className="flex flex-col lgss:w-1/2">
               <label htmlFor="surname" className="text-[18px] font-semibold">
                 Surname
               </label>
@@ -41,7 +41,7 @@ const StuSignUp = () => {
                 className="py-2 shadow-lg shadow-gray-400/70 outline-none px-2"
               />
             </div>
-            <div className="flex flex-col w-1/2">
+            <div className="flex flex-col lgss:w-1/2">
               <label htmlFor="surname" className="text-[18px] font-semibold">
                 First Name
               </label>
@@ -54,8 +54,8 @@ const StuSignUp = () => {
               />
             </div>
           </div>
-          <div className="flex flex-row w-[90%] space-x-8">
-            <div className="flex flex-col w-1/2">
+          <div className="flex flex-col lgss:flex-row w-[90%] lgss:space-x-8">
+            <div className="flex flex-col lgss:w-1/2">
               <label
                 htmlFor="middle name"
                 className="text-[18px] font-semibold"
@@ -70,7 +70,7 @@ const StuSignUp = () => {
                 className="py-2 shadow-lg shadow-gray-400/70 outline-none px-2"
               />
             </div>
-            <div className="flex flex-col w-1/2">
+            <div className="flex flex-col lgss:w-1/2">
               <label htmlFor="gender" className="text-[18px] font-semibold">
                 Gender
               </label>
@@ -93,8 +93,8 @@ const StuSignUp = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-row w-[90%] space-x-8">
-            <div className="flex flex-col w-1/2">
+          <div className="flex flex-col lgss:flex-row w-[90%] lgss:space-x-8">
+            <div className="flex flex-col lgss:w-1/2">
               <label
                 htmlFor="residential address"
                 className="text-[18px] font-semibold"
@@ -109,7 +109,7 @@ const StuSignUp = () => {
                 className="py-2 shadow-lg shadow-gray-400/70 outline-none px-2"
               />
             </div>
-            <div className="flex flex-col w-1/2">
+            <div className="flex flex-col lgss:w-1/2">
               <label
                 htmlFor="Email Address"
                 className="text-[18px] font-semibold"
@@ -125,8 +125,8 @@ const StuSignUp = () => {
               />
             </div>
           </div>
-          <div className="flex flex-row w-[90%] space-x-8">
-            <div className="flex flex-col w-1/2">
+          <div className="flex flex-col lgss:flex-row w-[90%] lgss:space-x-8">
+            <div className="flex flex-col lgss:w-1/2">
               <label htmlFor="class" className="text-[18px] font-semibold">
                 Class
               </label>
@@ -151,7 +151,7 @@ const StuSignUp = () => {
                 </FormControl>
               </div>
             </div>
-            <div className="flex flex-col w-1/2">
+            <div className="flex flex-col lgss:w-1/2">
               <label
                 htmlFor="phone number"
                 className="text-[18px] font-semibold"
@@ -168,9 +168,9 @@ const StuSignUp = () => {
             </div>
           </div>
           <div className="flex flex-row w-[90%] space-x-8">
-            <div className="flex flex-col w-1/2">
+            <div className="flex flex-col lgss:w-1/2">
               <label
-                htmlFor="residential address"
+                htmlFor="password"
                 className="text-[18px] font-semibold"
               >
                 Password
@@ -198,7 +198,7 @@ const StuSignUp = () => {
                 )}
               </div>
             </div>
-            <div className="flex flex-col w-1/2">
+            <div className="flex flex-col lgss:w-1/2">
               <label
                 htmlFor="residential address"
                 className="text-[18px] font-semibold"
@@ -231,12 +231,14 @@ const StuSignUp = () => {
           </div>
         </div>
         <Link className="w-[90%]" to={"/student"}>
-          <button className="bg-primary w-full py-3 mt-8 text-white font-semibold text-[18px] rounded-[16px]">Sign Up</button>
+          <button className="bg-primary w-full py-3 mt-8 text-white font-semibold text-[18px] rounded-[16px]">
+            Sign Up
+          </button>
         </Link>
         <p className="text-center w-full font-semibold mt-3">
           Already have an account?{" "}
           <Link
-            to={"/get-started/teacher/signin"}
+            to={"/get-started/student/signin"}
             className="text-red-300 underline px-2 font-medium"
           >
             Sign In
